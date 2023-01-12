@@ -1,0 +1,37 @@
+[[module Listpages range="." tags="+scp"]]
+[[include :scp-zh-tr:component:scp-meta-title-hiding-backend showing-title={$showing-title}
+| showing-title=%%name%%
+| title-transform={$title-transform}
+| color={$color}
+| {$css-style}-start= @@@@
+|{$css-style}-end= @@@@
+|classic-start=[!--
+| classic-end=--]
+| bhl-start=[!--
+| bhl-end=--]
+| penumbra-start=[!--
+| penumbra-end=--]
+| basalt-start=[!--
+| basalt-end=--]
+| basalt-dark-start=[!--
+| basalt-dark-end=--]
+| classic-ayers-start=[!--
+| classic-ayers-end=--]
+| basalt-ayers-start=[!--
+| basalt-ayers-end=--]
+| basalt-dark-ayers-start=[!--
+| basalt-dark-ayers-end=--]
+| modern-start=[!--
+| modern-end=--]]]
+[[/module]]
+
+[[module Listpages range="." tags="+scp" parent="-"]]
+[[%%content{0}%%module css]]
+#u-meta-title-hiding .pseudocrumbs{
+display:none!important;
+}
+#u-meta-title-hiding{
+line-height:80%;
+}
+[[%%content{0}%%/module]]
+[[/module]]
