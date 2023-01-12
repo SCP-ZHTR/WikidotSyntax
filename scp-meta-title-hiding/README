@@ -1,27 +1,28 @@
-+ 這是什麼？
+# 這是什麼？
 
 這是一個小道具，可以讓你的SCP標題整合進頁面的標題裡的同時維持原本的外觀，這樣用Listpages的時候就能直接看到你的作品名稱而不是單純的一串數字了。
 
-+ 那我該怎麼使用呢？
+# 那我該怎麼使用呢？
 
 首先，你要透過編輯頁面把SCP的作品名稱放到標題（Title of the page）的欄位。比方說把[SCP-201]改成[SCP-201 - 空蕩蕩的世界]。
 
 接著，根據你用的CSS不同，需要使用不一樣的代碼，不過它們都大同小異，重點是要把那一行代碼放到內容的最頂端。不過有些例外的情況，就是如果你的SCP本來就已經對標題動過一些手腳（例如[[[scp-zh-024|收容室ZH-S12-E-024實驗紀錄]]]）、[[[SCP-2998]]]（它用CSS更改了標題的顯示方式）或是你已經使用ACS標題模板（它會直接蓋過標題），那麼你可能就不需要再額外添加下列代碼。
 [[div class="blockquote"]]
-+++ 無CSS（或其他Sigma-9主題）
-[[div class="code"]]
-@@[[include component:scp-meta-title-hiding css-style=classic]]@@
-[[/div]]
+### 無CSS（或其他Sigma-9主題）
+```
+[[include component:scp-meta-title-hiding css-style=classic]]
+```
 
-+++ 黑色標記筆（BHL）
-[[div class="code"]]
-@@[[include component:scp-meta-title-hiding css-style=bhl]]@@
-[[/div]]
+### 黑色標記筆（BHL）
+```
+[[include component:scp-meta-title-hiding css-style=bhl]]
+```
 
-+++ 半影（Penumbra）
-[[div class="code"]]
-@@[[include component:scp-meta-title-hiding css-style=penumbra]]@@
-[[/div]]
+
+### 半影（Penumbra）
+```
+[[include component:scp-meta-title-hiding css-style=penumbra]]
+```
 
 +++ 玄武岩（Basalt）
 [[div class="code"]]
