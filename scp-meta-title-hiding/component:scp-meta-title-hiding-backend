@@ -1,0 +1,98 @@
+[[div id="meta-title-hiding"]]
+[[div class="meta-title"]]
+{$showing-title}
+[[/div]]
+[[span class="pseudocrumbs"]]%%parent_title_linked%%» %%title%%[[/span]]
+[[/div]]
+
+[[%%content{0}%%module css]]
+
+div#page-title::before{
+content:"{$showing-title}";
+}
+#u-meta-title-hiding .meta-title{
+margin-bottom:0.5em;
+}
+div#page-title{
+color:transparent;
+white-space:nowrap;
+text-overflow:ellipsis;
+overflow:hidden;
+-webkit-user-select:none;
+-moz-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+#u-meta-title-hiding{
+display:none;
+}
+#breadcrumbs{
+display:none!important;
+}
+
+[[%%content{0}%%/module]]
+
+[[iftags -001提案 +scp]]
+[[%%content{0}%%module css]]
+div#page-title,#u-meta-title-hiding .meta-title, #u-meta-title-hiding .pseudocrumbs{
+text-transform: uppercase;
+}
+
+#u-meta-title-hiding .pseudocrumbs a{
+text-transform: none;
+}
+[[%%content{0}%%/module]]
+[[/iftags]]
+
+[[%%content{0}%%module css]]
+div#page-title,#u-meta-title-hiding .meta-title, #u-meta-title-hiding .pseudocrumbs{
+text-transform: {$title-transform};
+}
+
+#u-meta-title-hiding .pseudocrumbs a{
+text-transform: none;
+}
+[[%%content{0}%%/module]]
+
+{$classic-start}
+[[include :scp-zh-tr:component:scp-mth-classic]]
+{$classic-end}
+
+{$classic-ayers-start}
+[[include :scp-zh-tr:component:scp-mth-classic-ayers]]
+{$classic-ayers-end}
+
+{$bhl-start}
+[[include :scp-zh-tr:component:scp-mth-bhl]]
+{$bhl-end}
+
+{$penumbra-start}
+[[include :scp-zh-tr:component:scp-mth-penumbra]]
+{$penumbra-end}
+
+{$basalt-start}
+[[include :scp-zh-tr:component:scp-mth-basalt]]
+{$basalt-end}
+
+{$basalt-dark-start}
+[[include :scp-zh-tr:component:scp-mth-basalt-dark]]
+{$basalt-dark-end}
+
+{$basalt-dark-ayers-start}
+[[include :scp-zh-tr:component:scp-mth-basalt-dark-ayers]]
+{$basalt-dark-ayers-end}
+
+{$basalt-ayers-start}
+[[include :scp-zh-tr:component:scp-mth-basalt-ayers]]
+{$basalt-ayers-end}
+
+{$modern-start}
+[[include :scp-zh-tr:component:scp-mth-modern]]
+{$modern-end}
+
+[[%%content{0}%%module css]]
+div#page-title::before, #u-meta-title-hiding .meta-title{
+color:{$color};
+}
+[[%%content{0}%%/module]]
